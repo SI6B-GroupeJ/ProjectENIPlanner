@@ -1,0 +1,4 @@
+services:
+#    consultant.example:
+#        class: ConsultantBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

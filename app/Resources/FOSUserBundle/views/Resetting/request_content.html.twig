@@ -1,0 +1,17 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container">
+    <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request login-form">
+        <div class="login-wrap">
+            <p class="login-img"><img src="{{ asset('img/eni.png') }}" width="75" height="75"></p>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_profile"></i></span>
+                <input class="form-control" placeholder="Votre Adresse mail" type="text" id="username" name="username"
+                       required="required"/>
+            </div>
+            <input class="btn btn-primary btn-lg btn-block" type="submit"
+                   value="{{ 'resetting.request.submit'|trans }}"/>
+        </div>
+    </form>
+</div>
